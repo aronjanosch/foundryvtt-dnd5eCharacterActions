@@ -1,5 +1,5 @@
 import { getActivationType, getGame, log, isActiveItem } from './helpers';
-import { MODULE_ID, MyFlags, MySettings, damageTypeIconMap, ItemTypeSortValues } from './constants';
+import { MODULE_ID, MyFlags, MySettings, damageTypeIconMap, ItemTypeSortValues, TEMPLATES } from './constants';
 
 export function getActorActionsData(actor) {
   const filteredItems = actor.items
@@ -130,14 +130,16 @@ export function isItemInActionList(item) {
  */
 export function renderActionsList(actorData, options) {
   const actionData = getActorActionsData(actorData);
+
   log(false, 'renderActionsList', {
     actorData,
     options,
     data: actionData,
   });
+
   if (options !== undefined) {
     if (options.sheetVersion == 'actor-actions-list-v2') {
-      return renderTemplate(`modules/${MODULE_ID}/templates/actor-actions-list-v2.hbs`, {
+      return renderTemplate(TEMPLATES.actionListv2, {
         actionData,
         abilities: getGame().dnd5e.config.abilities.label,
         activationTypes: {
@@ -154,7 +156,7 @@ export function renderActionsList(actorData, options) {
       });
     }
   } else {
-    return renderTemplate(`modules/${MODULE_ID}/templates/actor-actions-list.hbs`, {
+    return renderTemplate(TEMPLATES.actionList, {
       actionData,
       abilities: getGame().dnd5e.config.abilities.label,
       activationTypes: {
