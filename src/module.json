@@ -41,12 +41,12 @@
     "minimum": 11,
     "verified": 12.331
   },
-  "bugs": "https://github.com/eastcw/foundryvtt-dnd5eCharacterActions/issues",
-  "changelog": "https://github.com/eastcw/foundryvtt-dnd5eCharacterActions/releases",
-  "download": "https://github.com/eastcw/foundryvtt-dnd5eCharacterActions/releases/download/v6.1.0/module.zip",
-  "manifest": "https://github.com/eastcw/foundryvtt-dnd5eCharacterActions/releases/latest/download/module.json",
-  "readme": "https://github.com/eastcw/foundryvtt-dnd5eCharacterActions/blob/main/README.md",
-  "url": "https://github.com/eastcw/foundryvtt-dnd5eCharacterActions",
+  "bugs": "https://github.com/aronjanosch/foundryvtt-dnd5eCharacterActions/issues",
+  "changelog": "https://github.com/aronjanosch/foundryvtt-dnd5eCharacterActions/releases",
+  "download": "https://github.com/aronjanosch/foundryvtt-dnd5eCharacterActions/releases/download/v6.1.0/module.zip",
+  "manifest": "https://github.com/aronjanosch/foundryvtt-dnd5eCharacterActions/releases/latest/download/module.json",
+  "readme": "https://github.com/aronjanosch/foundryvtt-dnd5eCharacterActions/blob/main/README.md",
+  "url": "https://github.com/aronjanosch/foundryvtt-dnd5eCharacterActions",
   "manifestPlusVersion": "1.2.0",
   "flags": {
     "allowBugReporter": true
